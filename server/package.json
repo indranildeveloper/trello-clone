@@ -1,0 +1,21 @@
+{
+  "name": "trello-clone-server",
+  "version": "1.0.0",
+  "description": "Trello Clone Server",
+  "main": "dist/server.js",
+  "author": "Indranil Halder",
+  "license": "MIT",
+  "scripts": {
+    "client": "npm start --prefix ../client/",
+    "server": "tsc && nodemon dist/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "concurrently": "^6.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
